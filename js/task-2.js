@@ -1,24 +1,8 @@
 
-// const getUsersWithFriend = (users, friendName) => {
-//     const rez = [];
-//      const seach = users.includes(friendName);
-
-//     rez.filter((user) => user.friendName === seach );
-   
-//     return rez;
-// };
-
 
 const getUsersWithFriend = (users, friendName) => {
-    const rez = [];
-     const seach = users.includes(friendName);
-
-    users.filter((user) => user.name === seach);
-   
-    return rez;
+  return users.filter(user => user.friends.includes(friendName));
 };
-
-
 
 
 
@@ -55,6 +39,9 @@ const allUsers = [
     friends: ["Goldie Gentry", "Briana Decker"]
   }
 ];
+
+
+
 
 
 
